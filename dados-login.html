@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Início cabeçalho -->
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ONGS</a></li>
+                <li><a href="#">PROJETOS</a></li>
+                <li><a href="#">NOTÍCIAS</a></li>
+            </ul>
+        </nav>
+        <div id="header-direita">
+            <div>
+                <a href="#"><img src="images/lupa.png" alt="" id="busca"></a>
+            </div>
+            <div id="login">
+                <button id="btn-login">
+                    Login
+                </button>
+            </div>
+        </div>
+        <button id="botao-hamburger" onclick="mudaMenu()">
+            <img src="images/hamburger.png" alt="" id="hamburger">
+        </button>
+
+        <div id="hamburger-menu">
+            <ul>
+                <li><a href="login-corporativo.html">HOME</a></li>
+                <li><a href="#">ONGS</a></li>
+                <li><a href="#">PROJETOS</a></li>
+                <li><a href="#">NOTÍCIAS</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Fim cabeçalho -->
+
+
+    <!-- Início DIV principal -->
+    <div id="principal">
+        <div id="cadastro-ong">
+            <div class="titulo-cadastro">
+                <h1>CRIE SEU LOGIN</h1>
+            </div>
+            <div class="progress">
+                <img src="images/Timeline.png" alt="">
+            </div>
+            <form class="form-cadastro">
+                <div class="email-usuario">
+                    <label for="email">Email</label>
+                    <input type="email" id="mailOng" placeholder="usuario@conta.com">
+                </div>
+                <div class="inputs-confirma-senha">
+                    <div class="senha-login">
+                        <label for="senha-login">Senha</label>
+                        <input type="password" id="senha-login" placeholder="**********">
+                        <button id="ver-senha"><img src="images/eye.png" alt=""></button>
+                    </div>
+                    <div class="confirma-senha">
+                        <label for="conf-senha">Confirmar senha</label>
+                        <input type="password" id="conf-senha" placeholder="**********">
+                        <button id="ver-senha"><img src="images/eye.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="btn-navegacao">
+                    <a href="dados-bancarios.html"><button class="voltar">Voltar</button></a>
+                    <a href="login-corporativo.html"><button class="proximo">Cadastrar</button></a>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <!-- Fim DIV principal  -->
+    <script src="main.js"></script>
+</body>
+
+</html>
